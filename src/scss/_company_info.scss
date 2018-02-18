@@ -1,0 +1,80 @@
+.company-info{
+  min-height:900px;
+  padding:100px 0;
+}
+
+.company-info-box-one{
+  background:#444344;
+  position:relative;
+  z-index:3;
+  border-radius: 10px;
+}
+
+.company-info-pic{
+  width: 100%;
+  height:300px;
+}
+
+.company-info-title{
+  font-size: 30px;
+  color: #fff;
+  margin-top:90px;
+  line-height: 35px;
+
+}
+
+.company-info-text{
+  padding-bottom:50px;
+  padding-top: 20px;
+  border-bottom: 1px solid white;
+  color:#a2a1a2;
+}
+
+.company-intro{
+  position: absolute;
+  top:280px;
+  left:0;
+  background-color: $orange;
+  padding:15px 45px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #fff;
+}
+
+.company-info-box-two {
+  position: absolute;
+  top:120px;
+  right:40px;
+  background-color: #f8f8f8;
+  width:100%;
+  z-index:2;
+  border-radius: 10px;
+}
+
+.company-info-activity{
+  padding-top:50px;
+  padding-bottom:20px;
+}
+
+.company-info-list{
+  list-style: none;
+    li{
+      padding:10px;
+      font-size: 17px;
+    }
+    .fa-check{
+      color: $orange;
+      margin-right:10px;
+    }
+}
+
+@media (max-width: 576px) {
+  .company-info-box-two{
+    position: static;
+  }
+  .company-info{
+    padding:50px 0;
+  }
+}
+
+

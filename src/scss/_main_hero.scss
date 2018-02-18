@@ -1,0 +1,93 @@
+.main-hero{
+  background: url("../images/pipes.jpg") no-repeat center;
+  background-size: cover;
+  height:100vh;
+}
+
+.main-header{
+  width:100%;
+  position: fixed;
+  z-index:4;
+}
+
+
+.navbar-brand{
+  img{
+    width: 100px;
+    height:30px;
+  }
+}
+
+.nav-link{
+  letter-spacing: 2px;
+  background: white;
+  position: relative;
+  color: $gray;
+  z-index:3;
+  &:hover{
+    color: #fff;
+  }
+  &:after{
+    position: absolute;
+    content:'';
+    bottom:0;
+    left:0;
+    background: $orange;
+    width:0;
+    height:100%;
+    transition: ease-out .5s;
+    opacity:0;
+  }
+  &:hover:after{
+    opacity:1;
+    color: #fff;
+    width:100%;
+    z-index:-1;
+    border-radius:5px;
+  }
+}
+
+.slideInText{
+  width:700px;
+  height:230px;
+  background: #fff;
+  padding:40px 100px 20px 70px;
+  position: absolute;
+  top:500px;
+  left:200px;
+  opacity:0;
+  transition: all 3s;
+  p{
+    font-size: 25px;
+    font-weight: 500;
+  }
+}
+
+.active{
+  opacity:0.9;
+  left:80px;
+}
+
+@media (max-width: 992px) {
+  .slideInText{
+    width:550px;
+    height:180px;
+    p{
+      font-size: 17px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .slideInText{
+    width:100%;
+    height:150px;
+    left:0;
+  }
+}
+
+@media (max-width: 576px) {
+  .slideInText{
+    height:30%;
+  }
+}

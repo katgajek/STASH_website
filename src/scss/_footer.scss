@@ -1,0 +1,32 @@
+.main-footer{
+  background: $gray;
+  color:#fff;
+  min-height:400px;
+  padding: 100px 0 30px 0;
+}
+
+.fa-phone, .fa-map-marker-alt, .fa-envelope{
+  color: $orange;
+  font-size: 25px;
+}
+
+.footer-list{
+  list-style: none;
+}
+
+.main-footer .row{
+  padding-bottom: 80px;
+}
+
+.footer-copyright{
+  padding-top:20px;
+  text-align: center;
+  border-top: 2px dotted #ffae15;
+}
+
+
+@media (max-width: 576px) {
+  .main-footer{
+    padding:50px 0;
+  }
+}

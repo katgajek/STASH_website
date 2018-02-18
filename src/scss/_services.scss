@@ -1,0 +1,55 @@
+.services{
+  min-height:700px;
+  background: url("../images/instalation.jpg") no-repeat center fixed;
+  background-size: cover;
+  padding:100px 0;
+}
+
+.services .section-title{
+  color: #fff;
+}
+
+.services-box{
+  background: #fff;
+  height:100%;
+  width:100%;
+  border-radius: 10px;
+}
+
+.services-list{
+  padding:15px 25px;
+  list-style: none;
+  text-align: left;
+  li{
+    line-height: 40px;
+  }
+}
+
+.services-box-title{
+  border-radius: 10px;
+  padding:20px;
+  background-color: $orange;
+  color: #fff;
+  position: relative;
+  &:after{
+    position: absolute;
+    bottom:0;
+    left:0;
+    content:'';
+    background: #5c5b5c;
+    width:100%;
+    height:6px;
+  }
+}
+
+.services-box-text{
+  padding:15px 25px;
+}
+
+@media (max-width: 576px) {
+  .services{
+    padding:50px 0;
+  }
+}
+
+
