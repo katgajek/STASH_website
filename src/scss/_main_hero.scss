@@ -22,7 +22,7 @@
   letter-spacing: 2px;
   background: white;
   position: relative;
-  color: $gray;
+  color: #444344;
   z-index:3;
   &:hover{
     color: #fff;
@@ -32,7 +32,7 @@
     content:'';
     bottom:0;
     left:0;
-    background: $orange;
+    background:$orangeColor;
     width:0;
     height:100%;
     transition: ease-out .5s;
