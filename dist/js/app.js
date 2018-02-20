@@ -1,11 +1,11 @@
 $(function(){
 
-    function slideIn() {
+    function fadeIn() {
         setTimeout(function () {
             $(".slideInText").addClass("active");
         }, 500)
     }
-    slideIn();
+    fadeIn();
 
 
     function scrollAfterClick(){
@@ -23,4 +23,5 @@ $(function(){
     }
 
     scrollAfterClick();
+
 });

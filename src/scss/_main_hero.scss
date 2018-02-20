@@ -10,20 +10,19 @@
   z-index:4;
 }
 
-
 .navbar-brand{
   img{
-    width: 100px;
-    height:30px;
+    width: 170px;
+    height:50px;
   }
 }
 
 .nav-link{
-  letter-spacing: 2px;
-  background: white;
+  background: #fff;
   position: relative;
   color: #444344;
   z-index:3;
+  font-size: 20px;
   &:hover{
     color: #fff;
   }
@@ -47,20 +46,27 @@
   }
 }
 
-.slideInText{
-  width:700px;
-  height:230px;
+.slideInText {
+  width: 650px;
+  height: 230px;
   background: #fff;
-  padding:40px 100px 20px 70px;
+  padding: 20px 80px 20px 70px;
+  border-radius: 7px;
   position: absolute;
-  top:500px;
-  left:200px;
-  opacity:0;
+  top: 500px;
+  left: 200px;
+  opacity: 0;
   transition: all 3s;
-  p{
-    font-size: 25px;
+}
+
+.slideInText-title{
+  color: $orangeColor;
+}
+.slideInText-list{
     font-weight: 500;
-  }
+    font-size: 23px;
+    padding:10px;
+
 }
 
 .active{
@@ -72,8 +78,10 @@
   .slideInText{
     width:550px;
     height:180px;
-    p{
+
+    .slideInText-list li{
       font-size: 17px;
+      list-style: none;
     }
   }
 }
