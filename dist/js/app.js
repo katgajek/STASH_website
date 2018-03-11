@@ -9,7 +9,7 @@ $(function(){
 
 
     function scrollAfterClick(){
-        $(".navbar a").on("click", function(e){
+        $(".navbar a").on("click tap", function(e){
         e.preventDefault();
 
         const href = $(this).attr("href");
